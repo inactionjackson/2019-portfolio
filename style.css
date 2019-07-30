@@ -5,12 +5,12 @@
 }
 
 body{
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     width: 100vw;
     height: 100vh;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
-    background: rgb(189, 193, 221);
 }
 
 nav{
@@ -22,7 +22,7 @@ nav{
     width: 100%;
     height: 60px;
     z-index: 100;
-    background: #575F85;
+    background: #0C243E;
 }
 
 #name{
@@ -49,10 +49,15 @@ nav{
 #container > .resumeContainer{
     display: flex;
     flex-direction: row;
-    width: 100%;
-    border: 1px solid black;
-    background: rgb(215, 235, 221);
-    margin: 20px 0px;
+    width: 100vw;
+    justify-content: center;
+    color: #5E6573;
+    text-shadow: 0px 0px 2px rgb(206, 204, 204);
+    background: #6ADA94;
+    margin: 20px 0px 0px -60px;
+    -webkit-box-shadow: inset 0px 0px 80px 0px rgba(54,193,155,1);
+-moz-box-shadow: inset 0px 0px 80px 0px rgba(54,193,155,1);
+box-shadow: inset 0px 0px 80px 0px rgba(54,193,155,1);
 }
 #container > .resumeContainer > i{
     font-size: 3em;
@@ -60,13 +65,12 @@ nav{
 }
 #container > .resumeContainer > p{
     font-size: 1.6em;
-    color:rgb(36, 36, 36);
     align-self: center;
 }
 #container > .resumeContainer > p > a{
     font-weight: bold;
     text-decoration: underline;
-    color: #000;
+    color: rgb(54, 62, 78);
 }
 #container > .resumeContainer > p > a:hover{
     cursor: pointer;
@@ -85,7 +89,13 @@ nav{
     height: 500px;
     margin:10px auto;
     background: #ffffff;
-    border: 1px #000 solid; 
+    border-radius: 10px 10px 10px 10px;
+-moz-border-radius: 10px 10px 10px 10px;
+-webkit-border-radius: 10px 10px 10px 10px;
+border: 0px none #000000;
+    -webkit-box-shadow: 0px 8px 15px 0px rgba(163,163,163,0.75);
+    -moz-box-shadow: 0px 8px 15px 0px rgba(163,163,163,0.75);
+    box-shadow: 0px 8px 15px 0px rgba(163,163,163,0.75);
 }
 .portCard p{
     padding: 5px;
@@ -101,20 +111,33 @@ nav{
 }
 .portCard_linkContainer{
     position: absolute;
-    border-top: 1px solid white;
+
     bottom:0;
     width:100%;
     display: grid;
     grid-template-columns: 10fr .2fr 10fr;
     grid-auto-rows:40px;
+    
 }
 
 .portCard_linkContainer a{
-    background: rgb(37, 37, 37);
-    color: #fff;
+    color: #000;
     display:flex;
     justify-content: center;
     align-items: center;
+    
+}
+.portCard_linkContainer a:first-of-type{
+    border-radius: 0px 0px 0px 10px;
+-moz-border-radius: 0px 0px 0px 10px;
+-webkit-border-radius: 0px 0px 0px 10px;
+border: 0px none #000000;
+}
+.portCard_linkContainer a:last-of-type{
+    border-radius: 0px 0px 10px 0px;
+-moz-border-radius: 0px 0px 10px 0px;
+-webkit-border-radius: 0px 0px 10px 0px;
+border: 0px none #000000;
 }
 .portCard_linkContainer a i{
     padding-right: 5px;
@@ -124,15 +147,12 @@ nav{
 .portCard_linkContainer a:hover{
     cursor: pointer;
     background-color:rgb(75, 75, 75);
+    color:#fff;
 }
 .portCard_linkContainer a:hover i{
     font-size: 2em;
 }
-.portCard_linkContainer div{
-    background-color: #E5E5E5;
-    width: 100%;
-    height: 100%;
-}
+
 
 footer{
     position: fixed;
@@ -140,7 +160,7 @@ footer{
     bottom: 0px;
     width: 100%;
     justify-content: center;
-    background: rgb(212, 140, 71);
+    background: #5E6573;
     border-top: 1px solid #707070;
     
 }
@@ -161,12 +181,12 @@ footer ul li a{
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
     text-decoration: none;
-    color:#E5E5E5;
+    color: rgb(255, 253, 244);
     font-size: 1.5em;
 }
 
 footer ul li a i{
     
-    color:rgb(51, 58, 97);
+    color:#6ADA94;
 
 }
