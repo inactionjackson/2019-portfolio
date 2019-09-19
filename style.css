@@ -1,192 +1,197 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: 100vw;
-    height: 100vh;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-nav{
-    position: fixed;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    top: 0px;
-    width: 100%;
-    height: 60px;
-    z-index: 100;
-    background: #0C243E;
+a {
+  text-decoration: none;
 }
 
-#name{
-    display: flex;
-    font-size: 20pt;
-    color: #E5E5E5;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 10px;
-}
-#name > span{
-    font-size: 10pt;
-    padding: 3px 10px;
-    color: rgb(212, 140, 71);
-    letter-spacing: .08em;
-}
-#container{
-    position: relative;
-    height: 100vh;
-    padding: 60px;
-    
+nav {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  top: 0px;
+  width: 100%;
+  height: 60px;
+  z-index: 100;
+  background: #0c243e;
 }
 
-#container > .resumeContainer{
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    justify-content: center;
-    color: #5E6573;
-    text-shadow: 0px 0px 2px rgb(206, 204, 204);
-    background: #6ADA94;
-    margin: 20px 0px 0px -60px;
-    -webkit-box-shadow: inset 0px 0px 80px 0px rgba(54,193,155,1);
--moz-box-shadow: inset 0px 0px 80px 0px rgba(54,193,155,1);
-box-shadow: inset 0px 0px 80px 0px rgba(54,193,155,1);
+#name {
+  display: flex;
+  font-size: 20pt;
+  color: #e5e5e5;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px;
 }
-#container > .resumeContainer > i{
-    font-size: 3em;
-    padding:15px 2%;
+#name > span {
+  font-size: 10pt;
+  padding: 3px 10px;
+  color: rgb(212, 140, 71);
+  letter-spacing: 0.08em;
 }
-#container > .resumeContainer > p{
-    font-size: 1.6em;
-    align-self: center;
-}
-#container > .resumeContainer > p > a{
-    font-weight: bold;
-    text-decoration: underline;
-    color: rgb(54, 62, 78);
-}
-#container > .resumeContainer > p > a:hover{
-    cursor: pointer;
-}
-#container h2{
-    margin: 10px 0px;
-}
-.portContainer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px,1fr));
-    margin-bottom: 60px;
-}
-.portCard{
-    position: relative;
-    width: 90%;
-    height: 500px;
-    margin:10px auto;
-    background: #ffffff;
-    border-radius: 10px 10px 10px 10px;
--moz-border-radius: 10px 10px 10px 10px;
--webkit-border-radius: 10px 10px 10px 10px;
-border: 0px none #000000;
-    -webkit-box-shadow: 0px 8px 15px 0px rgba(163,163,163,0.75);
-    -moz-box-shadow: 0px 8px 15px 0px rgba(163,163,163,0.75);
-    box-shadow: 0px 8px 15px 0px rgba(163,163,163,0.75);
-}
-.portCard p{
-    padding: 5px;
-}
-.portCard p span{
-    font-weight: bold;
-}
-.portCard p span:first-child{
-    font-size: 1.4em;
-    font-weight: bold;
-    display: block;
-    padding-bottom: 5px;
-}
-.portCard_linkContainer{
-    position: absolute;
-
-    bottom:0;
-    width:100%;
-    display: grid;
-    grid-template-columns: 10fr .2fr 10fr;
-    grid-auto-rows:40px;
-    
+#container {
+  position: relative;
+  height: 100vh;
+  padding: 60px;
 }
 
-.portCard_linkContainer a{
-    color: #000;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    
+#container > .resumeContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+  color: #5e6573;
+  text-shadow: 0px 0px 2px rgb(206, 204, 204);
+  background: #6ada94;
+  margin: 20px 0px 0px -60px;
+  -webkit-box-shadow: inset 0px 0px 80px 0px rgba(54, 193, 155, 1);
+  -moz-box-shadow: inset 0px 0px 80px 0px rgba(54, 193, 155, 1);
+  box-shadow: inset 0px 0px 80px 0px rgba(54, 193, 155, 1);
 }
-.portCard_linkContainer a:first-of-type{
-    border-radius: 0px 0px 0px 10px;
--moz-border-radius: 0px 0px 0px 10px;
--webkit-border-radius: 0px 0px 0px 10px;
-border: 0px none #000000;
+#container > .resumeContainer > i {
+  font-size: 3em;
+  padding: 15px 2%;
 }
-.portCard_linkContainer a:last-of-type{
-    border-radius: 0px 0px 10px 0px;
--moz-border-radius: 0px 0px 10px 0px;
--webkit-border-radius: 0px 0px 10px 0px;
-border: 0px none #000000;
+#container > .resumeContainer > p {
+  font-size: 1.6em;
+  align-self: center;
 }
-.portCard_linkContainer a i{
-    padding-right: 5px;
-    transition: font-size 300ms;
-    transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+#container > .resumeContainer > p > a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: rgb(54, 62, 78);
 }
-.portCard_linkContainer a:hover{
-    cursor: pointer;
-    background-color:rgb(75, 75, 75);
-    color:#fff;
+#container > .resumeContainer > p > a:hover {
+  cursor: pointer;
 }
-.portCard_linkContainer a:hover i{
-    font-size: 2em;
+#container > h2 {
+  margin: 10px 0px;
+}
+.portContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  margin-bottom: 60px;
+}
+.portCard {
+  position: relative;
+  width: 90%;
+  height: 500px;
+  margin: 10px auto;
+  background: #ffffff;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 0px none #000000;
+  -webkit-box-shadow: 0px 8px 15px 0px rgba(163, 163, 163, 0.75);
+  -moz-box-shadow: 0px 8px 15px 0px rgba(163, 163, 163, 0.75);
+  box-shadow: 0px 8px 15px 0px rgba(163, 163, 163, 0.75);
+}
+.portCard img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px;
+  border-bottom: 1px solid #0c243e;
+}
+.portCard > p {
+  padding: 5px;
+}
+.portCard > p > span {
+  font-weight: bold;
+}
+.portCard > p > span:first-child {
+  font-size: 1.4em;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 5px;
+}
+.portCard_linkContainer {
+  position: absolute;
+
+  bottom: 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 10fr 0.2fr 10fr;
+  grid-auto-rows: 40px;
 }
 
+.portCard_linkContainer > a {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.portCard_linkContainer > a:first-of-type {
+  border-radius: 0px 0px 0px 10px;
+  -moz-border-radius: 0px 0px 0px 10px;
+  -webkit-border-radius: 0px 0px 0px 10px;
+  border: 0px none #000000;
+}
+.portCard_linkContainer > a:last-of-type {
+  border-radius: 0px 0px 10px 0px;
+  -moz-border-radius: 0px 0px 10px 0px;
+  -webkit-border-radius: 0px 0px 10px 0px;
+  border: 0px none #000000;
+}
+.portCard_linkContainer > a > i {
+  padding-right: 5px;
+  transition: font-size 300ms;
+  transition-timing-function: cubic-bezier(1, -0.25, 0.15, 1.55);
+}
+.portCard_linkContainer > a:hover {
+  cursor: pointer;
+  background-color: rgb(75, 75, 75);
+  color: #fff;
+}
+.portCard_linkContainer > a:hover i {
+  font-size: 2em;
+}
 
-footer{
-    position: fixed;
-    height: 35px;
-    bottom: 0px;
-    width: 100%;
-    justify-content: center;
-    background: #5E6573;
-    border-top: 1px solid #707070;
-    
+footer {
+  position: fixed;
+  height: 35px;
+  bottom: 0px;
+  width: 100%;
+  justify-content: center;
+  background: #5e6573;
+  border-top: 1px solid #707070;
 }
-footer .table{
-    display:table;
-    margin: 0 auto;
+footer > .table {
+  display: table;
+  margin: 0 auto;
 }
-footer ul{
-    list-style: none;    
-    width: 100%;
-    padding-top: 5px;
+footer > .table > ul {
+  list-style: none;
+  width: 100%;
+  padding-top: 5px;
 }
-footer ul li{
-    display: inline;
-    padding: 0px 40px;
+footer > .table > ul > li {
+  display: inline;
+  padding: 0px 40px;
 }
-footer ul li a{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: bold;
-    text-decoration: none;
-    color: rgb(255, 253, 244);
-    font-size: 1.5em;
+footer > .table > ul > li > a {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: rgb(255, 253, 244);
+  font-size: 1.5em;
 }
 
-footer ul li a i{
-    
-    color:#6ADA94;
-
+footer > .table > ul > li > a > i {
+  color: #6ada94;
 }

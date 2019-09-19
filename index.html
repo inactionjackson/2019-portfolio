@@ -1,99 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
     <title>Andrew Jackson's Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <span id="name"> Andrew Jackson <span>/ web developer</span> </span>
+      <span id="name"> Andrew Jackson <span>/ web developer</span> </span>
     </nav>
     <div id="container">
-        <div class="aboutContainer">
-            <p> About me here with link to Resume</p>
+      <div class="aboutContainer">
+        <p>About me here with link to Resume</p>
+      </div>
+      <div class="resumeContainer">
+        <i class="fas fa-file-alt"></i>
+        <p>
+          Download my resume as a <a>.PDF</a> or <a>.TXT (no formatting)</a>
+        </p>
+      </div>
+      <h2>Portfolio Projects:</h2>
+      <div class="portContainer">
+        <div class="portCard">
+          <img
+            src="imgs/fake-estate-mapScreenshot.jpg"
+            alt="fake-estate site screenshot"
+          />
+          <p>
+            <span>Real-estate search site</span>Features autocomplete city
+            search, filtered listing results, and map display with geocoding.
+            Made using <span>React (w/ hooks)</span> and
+            <span>easy-peasy (redux)</span>. The map and geocoding were done
+            with <span>leaflet</span>, <span>opencage</span>, and
+            <span>openstreetmaps</span>
+          </p>
+          <div class="portCard_linkContainer">
+            <a href="http://fake-estate.jxndevelopment.com"
+              ><i class="far fa-play-circle"></i> Live Demo</a
+            >
+            <div></div>
+            <a href="https://github.com/inactionjackson/fake-estate"
+              ><i class="fab fa-github"></i> View Code</a
+            >
+          </div>
         </div>
-        <div class="resumeContainer">
-            <i class="fas fa-file-alt"></i>
-            <p>Download my resume as a <a>.PDF</a> or <a>.TXT (no formatting)</a></p>
+        <div class="portCard">
+          <img src="imgs/testrisScreenshot.jpg" alt="tetris screenshot" />
+          <p>
+            <span>Tetris in Javascript</span>The game logic is plain
+            <span>es6 javascript</span>. And the canvas rendering is done with
+            <span>P5.js</span>
+          </p>
+          <div class="portCard_linkContainer">
+            <a href="http://jstetris.jxndevelopment.com"
+              ><i class="far fa-play-circle"></i> Live Demo</a
+            >
+            <div></div>
+            <a a href="https://github.com/inactionjackson/javascript-tetris"
+              ><i class="fab fa-github"></i> View Code</a
+            >
+          </div>
         </div>
-        <h2>Portfolio Projects:</h2>
-        <div class="portContainer">
-
-            <div class="portCard">
-                <div class="portCard_image"></div>
-                <p><span>Simple Reddit Viewer</span>Made to view subreddits without comments or voting.
-                Uses <span>React</span> to display data from Reddit's <span>json</span> api which is fetched using <span>Node.js (Express)</span></p>
-                <div class="portCard_linkContainer">
-                    <a><i class="far fa-play-circle"></i> Live Demo</a>
-                    <div></div>
-                    <a><i class="fab fa-github"></i> View Code</a>
-                </div>
-            </div>
-            <div class="portCard">
-                <div class="portCard_image"></div>
-                <p>Description of project</p>
-                <div class="portCard_linkContainer">
-                    <a><i class="far fa-play-circle"></i> Live Demo</a>
-                    <div></div>
-                    <a><i class="fab fa-github"></i> View Code</a>
-                </div>
-            </div>
-            <div class="portCard">
-                <div class="portCard_image"></div>
-                <p>Description of project</p>
-                <div class="portCard_linkContainer">
-                    <a><i class="far fa-play-circle"></i> Live Demo</a>
-                    <div></div>
-                    <a><i class="fab fa-github"></i> View Code</a>
-                </div>
-            </div>
-            <div class="portCard">
-                <div class="portCard_image"></div>
-                <p>Description of project</p>
-                <div class="portCard_linkContainer">
-                    <a><i class="far fa-play-circle"></i> Live Demo</a>
-                    <div></div>
-                    <a><i class="fab fa-github"></i> View Code</a>
-                </div>
-            </div>
-            <div class="portCard">
-                <div class="portCard_image"></div>
-                <p>Description of project</p>
-                <div class="portCard_linkContainer">
-                    <a><i class="far fa-play-circle"></i> Live Demo</a>
-                    <div></div>
-                    <a><i class="fab fa-github"></i> View Code</a>
-                </div>
-            </div>
-            <div class="portCard">
-                <div class="portCard_image"></div>
-                <p>Description of project</p>
-                <div class="portCard_linkContainer">
-                    <a><i class="far fa-play-circle"></i> Live Demo</a>
-                    <div></div>
-                    <a><i class="fab fa-github"></i> View Code</a>
-                </div>
-            </div>
-
-        </div>
-
+      </div>
     </div>
     <footer>
-        <div class="table">
-            <ul>
-                <!--TODO: fix these links with email and icons-->
-                <li><a href="#github"><i class="fab fa-github"></i></a></li>
-                <li><a href="#">andrew@jxndevelopment.com</a></li>
-                
-                <li><a href="#linkedin"><i class="fab fa-linkedin"></i></a></li>
-            </ul>
-        </div>
+      <div class="table">
+        <ul>
+          <li>
+            <a href="https://github.com/inactionjackson/"
+              ><i class="fab fa-github"></i
+            ></a>
+          </li>
+          <li><a>andrew@jxndevelopment.com</a></li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/inactionjackson/"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
     </footer>
-</body>
-<script src="https://kit.fontawesome.com/9103b2dc69.js"></script>
+  </body>
+  <script src="https://kit.fontawesome.com/9103b2dc69.js"></script>
 </html>
