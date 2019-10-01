@@ -52,18 +52,15 @@ nav {
   display: flex;
   flex-direction: row;
   width: 100vw;
-  justify-content: center;
+  justify-content:center;
   color: #5e6573;
-  text-shadow: 0px 0px 2px rgb(206, 204, 204);
   background: #6ada94;
   margin: 20px 0px 0px -60px;
-  -webkit-box-shadow: inset 0px 0px 80px 0px rgba(54, 193, 155, 1);
-  -moz-box-shadow: inset 0px 0px 80px 0px rgba(54, 193, 155, 1);
-  box-shadow: inset 0px 0px 80px 0px rgba(54, 193, 155, 1);
 }
 #container > .resumeContainer > i {
   font-size: 3em;
-  padding: 15px 2%;
+  padding: 15px;
+  align-self: center;
 }
 #container > .resumeContainer > p {
   font-size: 1.6em;
@@ -90,7 +87,7 @@ nav {
 }
 .portContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   margin-bottom: 60px;
 }
 .portCard {
@@ -202,4 +199,78 @@ footer > .table > ul > li > a {
 
 footer > .table > ul > li > a > i {
   color: #6ada94;
+}
+
+@media (max-width: 1000px) {
+  .aboutContainer{
+    width:100%;
+    font-size:1.4rem;
+    display:block;
+    margin: 10px auto;
+    text-indent: 3rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .aboutContainer{
+    width:100%;
+    font-size:1.4rem;
+    display:block;
+    margin: 10px auto;
+    text-indent: 3rem;
+    line-height: 2rem;
+    margin-top:40px;
+  }
+  .portContainer {
+    display: block;
+    width:100%;
+    margin:0;
+    padding:0 0 60px 0;
+  }
+  #container {
+    padding: 10px;
+  }
+  .portCard {
+    width: 98%;
+    height: auto;
+    padding-bottom: 40px;
+    margin: 10px auto;
+  }
+  
+  #name {
+    font-size: 1.3rem;
+  }
+  nav {
+    height: 40px;
+  }
+  #container > .resumeContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: center;
+    color: #5e6573;
+    background: #6ada94;
+    margin: 0 0 0 -10px;
+  }
+  footer > .table > ul > li {
+    padding: 0px 10px;
+  }
+  footer > .table > ul > li > a {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 350px){
+  #name > span {
+    display:none;
+  }
+  .aboutContainer{
+    font-size:1rem;
+    text-indent: 2rem;
+    line-height: 1.4rem;
+  }
+  footer > .table > ul > li {
+    padding: 0px;
+  }
 }
