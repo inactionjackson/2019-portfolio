@@ -80,6 +80,14 @@ nav {
 #container > h2 {
   margin: 10px 0px;
 }
+.aboutContainer{
+  width:80%;
+  font-size:2rem;
+  display:block;
+  margin: 30px auto;
+  text-indent: 4rem;
+  line-height: 3rem;
+}
 .portContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));

@@ -1,89 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Andrew Jackson's Portfolio</title>
-  </head>
 
-  <body>
-    <nav>
-      <span id="name"> Andrew Jackson <span>/ web developer</span> </span>
-    </nav>
-    <div id="container">
-      <div class="aboutContainer">
-        <p>About me here with link to Resume</p>
-      </div>
-      <div class="resumeContainer">
-        <i class="fas fa-file-alt"></i>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Andrew Jackson's Portfolio</title>
+</head>
+
+<body>
+  <nav>
+    <span id="name"> Andrew Jackson <span>/ web developer</span> </span>
+  </nav>
+  <div id="container">
+    <div class="aboutContainer">
+      <p>
+        I have over over 10 years of experience working with various web,
+        mobile, and game development technologies. I am focused on front-end
+        web development, primarily with React. I have honed my communication
+        skills through experience doing development, design, customer service,
+        and sales. And, I would love to put my skills and experience to work
+        for you and your team.
+      </p>
+    </div>
+    <div class="resumeContainer">
+      <i class="fas fa-file-alt"></i>
+      <p>
+        <a href="./Andrew-Jackson-Resume.pdf">View My Resume (.PDF)</a>
+      </p>
+    </div>
+    <h2>Portfolio Projects:</h2>
+    <div class="portContainer">
+      <div class="portCard">
+        <img src="imgs/fake-estate-mapScreenshot.jpg" alt="fake-estate site screenshot" />
         <p>
-          Download my resume as a <a>.PDF</a> or <a>.TXT (no formatting)</a>
+          <span>Real-estate search site</span>Features autocomplete city
+          search, filtered listing results, and map display with geocoding.
+          Made using <span>React (w/ hooks)</span> and
+          <span>easy-peasy (redux)</span>. The map and geocoding were done
+          with <span>leaflet</span>, <span>opencage</span>, and
+          <span>openstreetmaps</span>.
         </p>
-      </div>
-      <h2>Portfolio Projects:</h2>
-      <div class="portContainer">
-        <div class="portCard">
-          <img
-            src="imgs/fake-estate-mapScreenshot.jpg"
-            alt="fake-estate site screenshot"
-          />
-          <p>
-            <span>Real-estate search site</span>Features autocomplete city
-            search, filtered listing results, and map display with geocoding.
-            Made using <span>React (w/ hooks)</span> and
-            <span>easy-peasy (redux)</span>. The map and geocoding were done
-            with <span>leaflet</span>, <span>opencage</span>, and
-            <span>openstreetmaps</span>
-          </p>
-          <div class="portCard_linkContainer">
-            <a href="http://fake-estate.jxndevelopment.com"
-              ><i class="far fa-play-circle"></i> Live Demo</a
-            >
-            <div></div>
-            <a href="https://github.com/inactionjackson/fake-estate"
-              ><i class="fab fa-github"></i> View Code</a
-            >
-          </div>
+        <div class="portCard_linkContainer">
+          <a href="http://fake-estate.jxndevelopment.com"><i class="far fa-play-circle"></i> Live Demo</a>
+          <div></div>
+          <a href="https://github.com/inactionjackson/fake-estate"><i class="fab fa-github"></i> View Code</a>
         </div>
-        <div class="portCard">
-          <img src="imgs/testrisScreenshot.jpg" alt="tetris screenshot" />
-          <p>
-            <span>Tetris in Javascript</span>The game logic is plain
-            <span>es6 javascript</span>. And the canvas rendering is done with
-            <span>P5.js</span>
-          </p>
-          <div class="portCard_linkContainer">
-            <a href="http://jstetris.jxndevelopment.com"
-              ><i class="far fa-play-circle"></i> Live Demo</a
-            >
-            <div></div>
-            <a a href="https://github.com/inactionjackson/javascript-tetris"
-              ><i class="fab fa-github"></i> View Code</a
-            >
-          </div>
+      </div>
+      <div class="portCard">
+        <img src="imgs/coffee-shop-basic.jpg" alt="basic coffee shop site screenshot" />
+        <p>
+          <span>Coffee Shop Site</span>A resonsive coffee shop site made with basic <span>HTML</span>, <span>CSS</span>,
+          and <span>Javascript</span>.
+        </p>
+        <div class="portCard_linkContainer">
+          <a href="http://coffee-shop-basic.jxndevelopment.com"><i class="far fa-play-circle"></i> Live Demo</a>
+          <div></div>
+          <a href="https://github.com/inactionjackson/coffee-shop-basic"><i class="fab fa-github"></i> View Code</a>
+        </div>
+      </div>
+      <div class="portCard">
+        <img src="imgs/testrisScreenshot.jpg" alt="tetris screenshot" />
+        <p>
+          <span>Tetris in Javascript</span>The game logic is plain
+          <span>es6 javascript</span>. And the canvas rendering is done with
+          <span>P5.js</span>.
+        </p>
+        <div class="portCard_linkContainer">
+          <a href="http://jstetris.jxndevelopment.com"><i class="far fa-play-circle"></i> Live Demo</a>
+          <div></div>
+          <a a href="https://github.com/inactionjackson/javascript-tetris"><i class="fab fa-github"></i> View Code</a>
         </div>
       </div>
     </div>
-    <footer>
-      <div class="table">
-        <ul>
-          <li>
-            <a href="https://github.com/inactionjackson/"
-              ><i class="fab fa-github"></i
-            ></a>
-          </li>
-          <li><a>andrew@jxndevelopment.com</a></li>
+  </div>
+  <footer>
+    <div class="table">
+      <ul>
+        <li>
+          <a href="https://github.com/inactionjackson/"><i class="fab fa-github"></i></a>
+        </li>
+        <li><a>andrew@jxndevelopment.com</a></li>
 
-          <li>
-            <a href="https://www.linkedin.com/in/inactionjackson/"
-              ><i class="fab fa-linkedin"></i
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-  </body>
+        <li>
+          <a href="https://www.linkedin.com/in/inactionjackson/"><i class="fab fa-linkedin"></i></a>
+        </li>
+      </ul>
+    </div>
+  </footer>
   <script src="https://kit.fontawesome.com/9103b2dc69.js"></script>
+</body>
+
 </html>
