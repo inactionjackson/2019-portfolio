@@ -245,12 +245,7 @@ footer > .table > ul > li > a > i {
     height: 40px;
   }
   #container > .resumeContainer {
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-    justify-content: center;
-    color: #5e6573;
-    background: #6ada94;
+
     margin: 0 0 0 -10px;
   }
   footer > .table > ul > li {
